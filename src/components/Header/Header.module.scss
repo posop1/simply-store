@@ -1,0 +1,21 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.logo {
+  font-size: 28px;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    color: #5c5c5c;
+  }
+}
+.bin {
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    color: #5c5c5c;
+  }
+}
