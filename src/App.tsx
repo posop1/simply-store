@@ -7,17 +7,19 @@ import './styles/app.scss'
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={<HomePage />}
-        />
-        <Route
-          path="/bin"
-          element={<BinPage />}
-        />
-      </Routes>
+      <div className="container">
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={<HomePage />}
+          />
+          <Route
+            path="/bin"
+            element={<BinPage />}
+          />
+        </Routes>
+      </div>
     </div>
   )
 }
