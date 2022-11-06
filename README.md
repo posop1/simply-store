@@ -1,4 +1,4 @@
-# REACT-REDUX-TS
+# simply-store
 
 Test project
 
