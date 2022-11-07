@@ -5,11 +5,13 @@ import { IProduct } from '../../types'
 interface ProductsState {
   products: IProduct[]
   bin: IProduct[]
+  fullPrice: number
 }
 
 const initialState: ProductsState = {
   products: items,
-  bin: []
+  bin: [],
+  fullPrice: 0
 }
 
 const productSlice = createSlice({
@@ -20,6 +22,7 @@ const productSlice = createSlice({
       const toggleProduct = state.products.find((product) => product.id === action.payload)
       if (toggleProduct) {
         state.bin.push(toggleProduct)
+        state.fullPrice += toggleProduct.price
       }
     }
   }

@@ -5,7 +5,7 @@ import { useAppSelector } from '../../hooks'
 import s from './Header.module.scss'
 
 const Header: FC = () => {
-  const binProducts = useAppSelector((state) => state.products.bin).length
+  const binProducts = useAppSelector((state) => state.products.fullPrice)
 
   return (
     <div className={s.Header}>
@@ -19,7 +19,7 @@ const Header: FC = () => {
         >
           <BsBasket size={25} />
           <hr />
-          <p>{binProducts}</p>
+          <p>{binProducts}р.</p>
         </Link>
       ) : (
         <Link
