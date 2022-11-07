@@ -13,7 +13,16 @@
   }
 }
 .bin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60px;
+  width: 100%;
   transition: 0.1s ease-in-out;
+
+  hr {
+    height: 15px;
+  }
 
   &:hover {
     color: #5c5c5c;
