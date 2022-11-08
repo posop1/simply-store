@@ -1,0 +1,25 @@
+.list__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.bin__info {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.empty {
+  margin-top: 50px;
+  font-size: 30px;
+}
+.end__info {
+  margin: 50px 0;
+}

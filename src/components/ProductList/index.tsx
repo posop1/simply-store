@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { useAppSelector } from '../../hooks'
-import ProductItem from './ProductItem'
+import ProductItem from '../ProductItem'
 import s from './ProductList.module.scss'
 
 const ProductList: FC = () => {
@@ -11,10 +11,8 @@ const ProductList: FC = () => {
       {products.map((product) => (
         <ProductItem
           key={product.id}
-          id={product.id}
-          name={product.name}
-          price={product.price}
-          img={product.img}
+          product={product}
+          isBtn={true}
         />
       ))}
     </div>
