@@ -20,6 +20,7 @@ const productSlice = createSlice({
   reducers: {
     toggleBin(state, action: PayloadAction<number>) {
       const toggleProduct = state.products.find((product) => product.id === action.payload)
+
       if (toggleProduct) {
         state.bin.push(toggleProduct)
         state.fullPrice += toggleProduct.price
